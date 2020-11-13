@@ -79,11 +79,11 @@ a{
 }
 
 .col-sm-12{
-  transition: 0.15s;
+  transition: 0.05s;
 }
 
 .col-md-6{
-  transition: 0.15s;
+  transition: 0.05s;
 }
 
 
@@ -318,6 +318,11 @@ a{
   justify-content: flex-end;
 }
 
+.mobile-content-container{
+  display: none;
+}
+
+
 
 
 
@@ -383,10 +388,38 @@ a{
     font-size: 2.5em;
     color: white;
     margin-bottom: 0.5em;
+  }
 
+  .content-logo{
+    width: 10em;
+    height: auto;
+  }
+
+  .detailed-content-logo{
+    width: 17em;
+    height: auto;
+  }
+
+  .content-container{
+    padding: 0 5em 0 5em;
+  }
+
+
+
+  .contact-info{
+    font-size: 1.5em;
+    font-weight: 300;
+    color: black;
+    line-height: 1em;
+    margin: 0 0 0.6em 0;
+  }
+
+  .contact-title{
+    font-size: 2.5em;
+    font-weight: 600;
   }
 }
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1440px) {
   .major-division{
     min-height: 22em;
     background-color: #ebebeb;
@@ -439,6 +472,53 @@ a{
     background-size: cover;
     width: 100%;
   }
+
+  .content-logo{
+    width: 9em;
+    height: auto;
+  }
+
+  .detailed-content-logo{
+    width: 16em;
+    height: auto;
+  }
+
+  .content-container{
+    padding: 0 4.5em 0 4.5em;
+  }
+
+  .contact-info{
+    font-size: 1.3em;
+    font-weight: 300;
+    color: black;
+    line-height: 1em;
+    margin: 0 0 0.6em 0;
+  }
+
+  .contact-title{
+    font-size: 2.2em;
+    font-weight: 600;
+  }
+
+  .division-link-button{
+    background-color: #2A6FBD;
+    border-radius: 10px;
+    color: white;
+    padding: 0.5em 1em 0.5em 1em;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-top: 1em;
+
+  }
+
+  .content-text{
+    font-size: 1.3em;
+    font-weight: 300;
+    color: #000000;
+    justify-content: flex-end;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .major-division{
@@ -476,7 +556,7 @@ a{
 
   .minor-division-banner{
     position: absolute;
-    top: -20px;
+    top: 0px;
     left:0;
     z-index: 0;
     max-width: 100%;
@@ -524,9 +604,67 @@ a{
 
   }
 
+  .content-logo{
+    display: flex;
+    width: 9em;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .detailed-content-logo{
+    width: 13em;
+    height: auto;
+  }
+
+  .content-container{
+    padding: 0 3em 0 3em;
+  }
+
+  .contact-info{
+    font-size: 1.2em;
+    font-weight: 300;
+    color: black;
+    line-height: 1em;
+    margin: 0 0 0.6em 0;
+  }
+
+  .contact-title{
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+
+  .division-link-button{
+    background-color: #2A6FBD;
+    border-radius: 10px;
+    color: white;
+    padding: 0.5em 0.75em 0.5em 0.75em;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-top: 1em;
+
+  }
+
+  .division-details{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    padding: 0em 1em 0em 1em;
+    margin: 4em 0 3em 0;
+  }
+
+  .content-text{
+    font-size: 1.1em;
+    font-weight: 300;
+    color: #000000;
+    justify-content: flex-end;
+  }
+
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 992px) {
   .major-division{
     min-height: 12em;
     background-color: #ebebeb;
@@ -572,13 +710,13 @@ a{
     max-width: 100%;
   } */
 
-  /* .minor-division-banner{
+  .minor-division-banner{
     position: absolute;
-    top: -20px;
+    top: 0px;
     left:0;
     z-index: 0;
     max-width: 100%;
-  } */
+  }
 
   .division-logo{
     width: 7em;
@@ -606,9 +744,108 @@ a{
     margin-bottom: 0.5em;
 
   }
+
+  .content-logo{
+    display: none;
+    width: 8em;
+    height: auto;
+  }
+
+  .detailed-content-logo{
+    display: none;
+    width: 13em;
+    height: auto;
+  }
+
+  .content-container{
+    display: none;
+    padding: 0 2.5em 0 2.5em;
+  }
+
+  .mobile-content-container{
+    display: block;
+  }
+
+  .contact-info{
+    font-size: 1.2em;
+    font-weight: 300;
+    color: black;
+    line-height: 1em;
+    margin: 0 0 0.6em 0;
+  }
+
+  .contact-title{
+    font-size: 1.6em;
+    font-weight: 600;
+  }
+
+  .division-link-button{
+    background-color: #2A6FBD;
+    border-radius: 10px;
+    color: white;
+    padding: 0.5em 0.75em 0.5em 0.75em;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-top: 1em;
+
+  }
+
+  .division-details{
+    display: flex;
+    align-items:center;
+    padding: 0em 1em 0em 1em;
+    margin: 4em 0 3em 0;
+  }
+  .content-img{
+    margin: 2em 0 1em 0;
+  }
+
+  .content-text{
+    font-size: 1em;
+    font-weight: 300;
+    color: #000000;
+    justify-content: flex-end;
+  }
 }
 
-@media only screen and (max-width: 600px) {
+
+
+@media only screen and (max-width: 768px) {
+
+  @keyframes division-grow {
+    from{
+      display: flex;
+      flex-grow: 1;
+      min-height: 26em;
+      overflow: hidden;
+      background-size: 100%;
+      background-position: 0% 0%;
+    }
+
+    to{
+      display: flex;
+      /* flex-grow: 2; */
+      min-height: 60em;
+      overflow: hidden;
+      background-size: 100%;
+      background-position: 0% -10%;
+      border-radius: 10px;
+    }
+  }
+
+  @keyframes gradient-grow-new {
+    from{
+      height: 12em;
+      background: linear-gradient(0deg, rgba(235,235,235,1) 97%, rgba(255,255,255,0.14189425770308128) 100%);}
+      to{
+        height: 56em;
+        background: linear-gradient(0deg, rgba(235,235,235,1) 97%, rgba(255,255,255,0.14189425770308128) 100%);
+      }
+
+  }
+
   .major-division{
     min-height: 10em;
     background-color: #ebebeb;
@@ -654,13 +891,13 @@ a{
     max-width: 100%;
   }
 
-  /* .minor-division-banner{
+  .minor-division-banner{
     position: absolute;
-    top: -20px;
+    top: 0px;
     left:0;
     z-index: 0;
     max-width: 100%;
-  } */
+  }
 
   .division-logo{
     width: 5em;
@@ -687,6 +924,251 @@ a{
   font-size: 1.5em;
   color: white;
   margin-bottom: 0.5em;
-
 }
+.division-details{
+  display: flex;
+  align-items:center;
+  padding: 0em 1em 0em 1em;
+  margin: 4em 0 1em 0;
+}
+
+
+  .content-logo{
+    display: none;
+    width: 3em;
+    height: auto;
+  }
+
+  .detailed-content-logo{
+    display: none;
+    width: 6em;
+    height: auto;
+  }
+
+  .content-container{
+    padding: 0 0 0 0;
+    display: none;
+  }
+
+
+
+
+  .content-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 2em 0 2em;
+    margin: 2em 0 1em 0;
+  }
+
+  .contact-info{
+    font-size: 1em;
+    font-weight: 300;
+    color: black;
+    line-height: 1em;
+    margin: 0 0 0.6em 0;
+  }
+
+  .contact-title{
+    font-size: 1.4em;
+    font-weight: 600;
+  }
+
+  .division-link-button{
+    background-color: #2A6FBD;
+    border-radius: 10px;
+    color: white;
+    padding: 0.5em 0.65em 0.5em 0.65em;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-top: 1em;
+
+  }
+  .content-text{
+    font-size: 0.75em;
+    font-weight: 300;
+    color: #000000;
+    justify-content: flex-end;
+  }
+}
+
+
+@media only screen and (max-width: 576px) {
+
+  @keyframes division-grow {
+    from{
+      display: flex;
+      flex-grow: 1;
+      min-height: 26em;
+      overflow: hidden;
+      background-size: 100%;
+      background-position: 0% 0%;
+    }
+
+    to{
+      display: flex;
+      /* flex-grow: 2; */
+      min-height: 60em;
+      overflow: hidden;
+      background-size: 100%;
+      background-position: 0% -10%;
+      border-radius: 10px;
+    }
+  }
+
+  @keyframes gradient-grow-new {
+    from{
+      height: 12em;
+      background: linear-gradient(0deg, rgba(235,235,235,1) 97%, rgba(255,255,255,0.14189425770308128) 100%);}
+      to{
+        height: 56em;
+        background: linear-gradient(0deg, rgba(235,235,235,1) 97%, rgba(255,255,255,0.14189425770308128) 100%);
+      }
+
+  }
+
+  .major-division{
+    min-height: 10em;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+  }
+
+  .major-division:hover{
+    position: relative;
+    transform: translateY(-7px);
+    transition: 0.6s;
+  }
+
+  .minor-division{
+    position: relative;
+    z-index:0;
+    overflow: hidden;
+    display: flex;
+    height: 10em;
+    border-radius: 10px;
+    border: solid 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .division-title-gradient{
+    position: absolute;
+    z-index:1;
+    left: 0;
+    bottom: 0;
+    height: 3em;
+    background: rgb(35,35,35);
+    background: linear-gradient(0deg, rgba(35,35,35,0.77) 20%, rgba(35,35,35,0.011642156862745057) 100%);
+    background-size: cover;
+    width: 100%;
+  }
+
+  .major-division-banner{
+    position: absolute;
+    top: -50px;
+    left:0;
+    z-index: 0;
+    max-width: 100%;
+  }
+
+  .minor-division-banner{
+    position: absolute;
+    top: 0px;
+    left:0;
+    z-index: 0;
+    max-width: 100%;
+  }
+
+  .division-logo{
+    width: 5em;
+    height: auto;
+    margin-bottom: 0.25em
+    /* margin: 0% 0% 1% 5%; */
+  }
+
+  .horizontal-division-logo{
+    width: 2em;
+    height: auto;
+    /* margin: 0% 0% 1% 5%; */
+  }
+
+  .detailed-division-logo{
+    width: 7em;
+    height: auto;
+    /* margin: 0% 0% 1% 5%; */
+}
+
+.division-title-text{
+  font-family: HelveticaNeue, sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: white;
+  margin-bottom: 0.5em;
+}
+.division-details{
+  display: flex;
+  align-items:center;
+  padding: 0em 1em 0em 1em;
+  margin: 4em 0 1em 0;
+}
+
+
+  .content-logo{
+    display: none;
+    width: 3em;
+    height: auto;
+  }
+
+  .detailed-content-logo{
+    display: none;
+    width: 6em;
+    height: auto;
+  }
+
+  .content-container{
+    padding: 0 0 0 0;
+  }
+
+  .content-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 2em 0 2em;
+    margin: 2em 0 1em 0;
+  }
+
+  .contact-info{
+    font-size: 1em;
+    font-weight: 300;
+    color: black;
+    line-height: 1em;
+    margin: 0 0 0.6em 0;
+  }
+
+  .contact-title{
+    font-size: 1.4em;
+    font-weight: 600;
+  }
+
+  .division-link-button{
+    background-color: #2A6FBD;
+    border-radius: 10px;
+    color: white;
+    padding: 0.5em 0.65em 0.5em 0.65em;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-top: 1em;
+
+  }
+  .content-text{
+    font-size: 0.75em;
+    font-weight: 300;
+    color: #000000;
+    justify-content: flex-end;
+  }
 }
