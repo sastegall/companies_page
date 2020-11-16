@@ -277,6 +277,10 @@ a{
   margin: 0 0 0.6em 0;
 }
 
+.larsen-contact-mobile{
+  margin-bottom: 0;
+}
+
 .email-address{
   text-decoration: none;
 }
@@ -521,6 +525,38 @@ a{
   }
 }
 @media only screen and (max-width: 1200px) {
+  @keyframes division-grow {
+    from{
+      display: flex;
+      flex-grow: 1;
+      min-height: 14em;
+      overflow: hidden;
+      background-size: 100%;
+      background-position: 0% 0%;
+    }
+
+    to{
+      display: flex;
+      /* flex-grow: 2; */
+      min-height: 74em;
+      overflow: hidden;
+      background-size: 100%;
+      background-position: 0% -10%;
+      border-radius: 10px;
+    }
+  }
+
+  @keyframes gradient-grow-new {
+    from{
+      height: 14em;
+      background: linear-gradient(0deg, rgba(235,235,235,1) 97%, rgba(255,255,255,0.14189425770308128) 100%);}
+      to{
+        height: 68em;
+        background: linear-gradient(0deg, rgba(235,235,235,1) 97%, rgba(255,255,255,0.14189425770308128) 100%);
+      }
+
+  }
+
   .major-division{
     min-height: 18em;
     background-color: #ebebeb;
@@ -567,7 +603,7 @@ a{
     z-index:1;
     left: 0;
     bottom: 0;
-    height: 9em;
+    height: 10em;
     background: rgb(35,35,35);
     background: linear-gradient(0deg, rgba(35,35,35,0.77) 20%, rgba(35,35,35,0.011642156862745057) 100%);
     background-size: cover;
@@ -598,7 +634,7 @@ a{
   .division-title-text{
     font-family: HelveticaNeue, sans-serif;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 2.2em;
     color: white;
     margin-bottom: 0.5em;
 
@@ -622,7 +658,7 @@ a{
   }
 
   .contact-info{
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: 300;
     color: black;
     line-height: 1em;
@@ -634,6 +670,19 @@ a{
     font-weight: 600;
   }
 
+  .larsen-contact-title{
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+
+  .larsen-contact-info{
+    font-size: 1.4em;
+    font-weight: 300;
+    color: black;
+    line-height: 1em;
+
+  }
+
   .division-link-button{
     background-color: #2A6FBD;
     border-radius: 10px;
@@ -642,7 +691,7 @@ a{
     width: 100%;
     text-align: center;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin-top: 1em;
 
   }
@@ -650,13 +699,17 @@ a{
   .division-details{
     display: flex;
     align-items:center;
-    justify-content: space-around;
+    justify-content: flex-start;
     padding: 0em 1em 0em 1em;
     margin: 4em 0 3em 0;
   }
 
+  .content-row{
+    padding: 0 1em 0 1em;
+  }
+
   .content-text{
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: 300;
     color: #000000;
     justify-content: flex-end;
@@ -665,8 +718,41 @@ a{
 }
 
 @media only screen and (max-width: 992px) {
+
+  @keyframes division-grow {
+    from{
+      display: flex;
+      flex-grow: 1;
+      min-height: 14em;
+      overflow: hidden;
+      background-size: 100%;
+      background-position: 0% 0%;
+    }
+
+    to{
+      display: flex;
+      /* flex-grow: 2; */
+      min-height: 80em;
+      overflow: hidden;
+      background-size: 100%;
+      background-position: 0% -10%;
+      border-radius: 10px;
+    }
+  }
+
+  @keyframes gradient-grow-new {
+    from{
+      height: 14em;
+      background: linear-gradient(0deg, rgba(235,235,235,1) 97%, rgba(255,255,255,0.14189425770308128) 100%);}
+      to{
+        height: 75em;
+        background: linear-gradient(0deg, rgba(235,235,235,1) 97%, rgba(255,255,255,0.14189425770308128) 100%);
+      }
+
+  }
+
   .major-division{
-    min-height: 12em;
+    min-height: 14em;
     background-color: #ebebeb;
     border-radius: 10px;
     overflow: hidden;
@@ -685,7 +771,7 @@ a{
     z-index:0;
     overflow: hidden;
     display: flex;
-    height: 12em;
+    height: 14em;
     border-radius: 10px;
     border: solid 2px rgba(0, 0, 0, 0.1);
   }
@@ -695,11 +781,15 @@ a{
     z-index:1;
     left: 0;
     bottom: 0;
-    height: 4em;
+    height: 7em;
     background: rgb(35,35,35);
     background: linear-gradient(0deg, rgba(35,35,35,0.77) 20%, rgba(35,35,35,0.011642156862745057) 100%);
     background-size: cover;
     width: 100%;
+  }
+
+  .title-container{
+  padding: 0 0 0 0.75em;
   }
 
   /* .major-division-banner{
@@ -719,41 +809,42 @@ a{
   }
 
   .division-logo{
-    width: 7em;
+    width: 5.5em;
     height: auto;
-    margin-bottom: 0.25em
+    margin-bottom: 0.5em
     /* margin: 0% 0% 1% 5%; */
   }
 
   .horizontal-division-logo{
     width: 4em;
+    margin-bottom: 0.5em;
     height: auto;
     /* margin: 0% 0% 1% 5%; */
   }
 
   .detailed-division-logo{
-    width: 11em;
+    width: 10em;
+    margin-bottom: 0.5em;
     height: auto;
     /* margin: 0% 0% 1% 5%; */
   }
   .division-title-text{
     font-family: HelveticaNeue, sans-serif;
     font-weight: 700;
-    font-size: 1.75em;
+    font-size: 1.5em;
+    line-height: 1em;
     color: white;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.6em;
 
   }
 
   .content-logo{
-    display: none;
-    width: 8em;
+    width: 12em;
     height: auto;
   }
 
   .detailed-content-logo{
-    display: none;
-    width: 13em;
+    width: 17em;
     height: auto;
   }
 
@@ -795,18 +886,25 @@ a{
   .division-details{
     display: flex;
     align-items:center;
+    justify-content: space-between;
     padding: 0em 1em 0em 1em;
     margin: 4em 0 3em 0;
   }
+
+  .content-row{
+    padding: 0 1em 0 1em;
+  }
+
   .content-img{
     margin: 2em 0 1em 0;
   }
 
   .content-text{
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: 300;
     color: #000000;
     justify-content: flex-end;
+    margin-bottom: 0.5em;
   }
 }
 
@@ -827,7 +925,7 @@ a{
     to{
       display: flex;
       /* flex-grow: 2; */
-      min-height: 60em;
+      min-height: 63em;
       overflow: hidden;
       background-size: 100%;
       background-position: 0% -10%;
@@ -840,10 +938,14 @@ a{
       height: 12em;
       background: linear-gradient(0deg, rgba(235,235,235,1) 97%, rgba(255,255,255,0.14189425770308128) 100%);}
       to{
-        height: 56em;
+        height: 57em;
         background: linear-gradient(0deg, rgba(235,235,235,1) 97%, rgba(255,255,255,0.14189425770308128) 100%);
       }
 
+  }
+
+  .title-container{
+    padding: 0;
   }
 
   .major-division{
@@ -876,7 +978,7 @@ a{
     z-index:1;
     left: 0;
     bottom: 0;
-    height: 3em;
+    height: 8em;
     background: rgb(35,35,35);
     background: linear-gradient(0deg, rgba(35,35,35,0.77) 20%, rgba(35,35,35,0.011642156862745057) 100%);
     background-size: cover;
@@ -885,7 +987,7 @@ a{
 
   .major-division-banner{
     position: absolute;
-    top: -50px;
+    top: -100px;
     left:0;
     z-index: 0;
     max-width: 100%;
@@ -893,7 +995,7 @@ a{
 
   .minor-division-banner{
     position: absolute;
-    top: 0px;
+    top: -125px;
     left:0;
     z-index: 0;
     max-width: 100%;
@@ -902,7 +1004,7 @@ a{
   .division-logo{
     width: 5em;
     height: auto;
-    margin-bottom: 0.25em
+    margin-bottom: 0em
     /* margin: 0% 0% 1% 5%; */
   }
 
@@ -917,14 +1019,23 @@ a{
     height: auto;
     /* margin: 0% 0% 1% 5%; */
 }
+.title-container{
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  margin: 0 0 1.5em 0.6em;
+}
+
 
 .division-title-text{
   font-family: HelveticaNeue, sans-serif;
   font-weight: 700;
   font-size: 1.5em;
   color: white;
-  margin-bottom: 0.5em;
+  margin-bottom: 0em;
+  margin-left: 0.6em;
 }
+
 .division-details{
   display: flex;
   align-items:center;
@@ -957,7 +1068,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0 2em 0 2em;
+    padding: 0 1em 0 1em;
     margin: 2em 0 1em 0;
   }
 
@@ -974,6 +1085,23 @@ a{
     font-weight: 600;
   }
 
+  .larsen-contact-title{
+    font-size: 1.4em;
+    font-weight: 600;
+  }
+
+  .larsen-contact-info{
+    font-size: 1em;
+    font-weight: 300;
+    color: black;
+    line-height: 1em;
+    margin: 0 0 0.6em 0;
+  }
+
+  .larsen-contact-mobile{
+    margin-bottom: 1em;
+  }
+
   .division-link-button{
     background-color: #2A6FBD;
     border-radius: 10px;
@@ -986,11 +1114,17 @@ a{
     margin-top: 1em;
 
   }
+
+  .content-img{
+    margin: 0 0 1em 0;
+  }
+
   .content-text{
-    font-size: 0.75em;
+    font-size: 1.1em;
     font-weight: 300;
     color: #000000;
     justify-content: flex-end;
+    margin: 0 0 0.6em 0;
   }
 }
 
@@ -1059,12 +1193,13 @@ a{
     z-index:1;
     left: 0;
     bottom: 0;
-    height: 3em;
+    height: 6em;
     background: rgb(35,35,35);
     background: linear-gradient(0deg, rgba(35,35,35,0.77) 20%, rgba(35,35,35,0.011642156862745057) 100%);
     background-size: cover;
     width: 100%;
   }
+
 
   .major-division-banner{
     position: absolute;
@@ -1085,7 +1220,7 @@ a{
   .division-logo{
     width: 5em;
     height: auto;
-    margin-bottom: 0.25em
+    margin-bottom: 0em;
     /* margin: 0% 0% 1% 5%; */
   }
 
@@ -1104,15 +1239,20 @@ a{
 .division-title-text{
   font-family: HelveticaNeue, sans-serif;
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: white;
-  margin-bottom: 0.5em;
+  margin-bottom: 0em;
+  margin-left: 0.5em;
 }
 .division-details{
   display: flex;
   align-items:center;
   padding: 0em 1em 0em 1em;
-  margin: 4em 0 1em 0;
+  margin: 4em 0 0em 0;
+}
+
+.larsen-contact-mobile{
+  margin-bottom: 1em;
 }
 
 
@@ -1128,9 +1268,11 @@ a{
     height: auto;
   }
 
-  .content-container{
+  .mobile-content-container{
     padding: 0 0 0 0;
   }
+
+
 
   .content-row{
     display: flex;
@@ -1153,6 +1295,19 @@ a{
     font-weight: 600;
   }
 
+  .larsen-contact-title{
+    font-size: 1.4em;
+    font-weight: 600;
+  }
+
+  .larsen-contact-info{
+    font-size: 1em;
+    font-weight: 300;
+    color: black;
+    line-height: 1em;
+    margin: 0 0 0.6em 0;
+  }
+
   .division-link-button{
     background-color: #2A6FBD;
     border-radius: 10px;
@@ -1163,12 +1318,15 @@ a{
     font-weight: 500;
     font-size: 1.2em;
     margin-top: 1em;
-
+  }
+  .content-img{
+    margin: 0em 0 1em 0;
   }
   .content-text{
-    font-size: 0.75em;
+    font-size: 1em;
     font-weight: 300;
     color: #000000;
-    justify-content: flex-end;
+    margin-bottom: 0.5em;
+
   }
 }
