@@ -351,6 +351,38 @@ a{
 
 /* Media Breakpoints and responsiveness rules */
 @media only screen and (max-width: 1800px) {
+  @keyframes division-grow {
+    from{
+      display: flex;
+      flex-grow: 1;
+      min-height: 26em;
+      overflow: hidden;
+      background-size: 100%;
+      background-position: 0% 0%;
+    }
+
+    to{
+      display: flex;
+      /* flex-grow: 2; */
+      min-height: 88em;
+      overflow: hidden;
+      background-size: 100%;
+      background-position: 0% -10%;
+      border-radius: 10px;
+    }
+  }
+
+  @keyframes gradient-grow-new {
+    from{
+      height: 26em;
+      background: linear-gradient(0deg, rgba(235,235,235,1) 97%, rgba(255,255,255,0.14189425770308128) 100%);}
+      to{
+        height: 80em;
+        background: linear-gradient(0deg, rgba(235,235,235,1) 97%, rgba(255,255,255,0.14189425770308128) 100%);
+      }
+
+  }
+
   .major-division-banner{
     position: absolute;
     top: -300px;
@@ -424,6 +456,38 @@ a{
   }
 }
 @media only screen and (max-width: 1440px) {
+  @keyframes division-grow {
+    from{
+      display: flex;
+      flex-grow: 1;
+      min-height: 20em;
+      overflow: hidden;
+      background-size: 100%;
+      background-position: 0% 0%;
+    }
+
+    to{
+      display: flex;
+      /* flex-grow: 2; */
+      min-height: 78em;
+      overflow: hidden;
+      background-size: 100%;
+      background-position: 0% -10%;
+      border-radius: 10px;
+    }
+  }
+
+  @keyframes gradient-grow-new {
+    from{
+      height: 20em;
+      background: linear-gradient(0deg, rgba(235,235,235,1) 97%, rgba(255,255,255,0.14189425770308128) 100%);}
+      to{
+        height: 70em;
+        background: linear-gradient(0deg, rgba(235,235,235,1) 97%, rgba(255,255,255,0.14189425770308128) 100%);
+      }
+
+  }
+
   .major-division{
     min-height: 22em;
     background-color: #ebebeb;
@@ -487,12 +551,24 @@ a{
     height: auto;
   }
 
+  .division-details{
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    padding: 0em 3.5em 0em 3.5em;
+    margin: 4em 0 3em 0;
+  }
+
   .content-container{
-    padding: 0 4.5em 0 4.5em;
+    padding: 0 1.5em 0 1.5em;
+  }
+
+  .content-row{
+    padding: 0;
   }
 
   .contact-info{
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: 300;
     color: black;
     line-height: 1em;
@@ -502,6 +578,19 @@ a{
   .contact-title{
     font-size: 2.2em;
     font-weight: 600;
+  }
+
+  .larsen-contact-title{
+    font-size: 2.2em;
+    font-weight: 600;
+  }
+
+  .larsen-contact-info{
+    font-size: 1.4em;
+    font-weight: 300;
+    color: black;
+    line-height: 1em;
+
   }
 
   .division-link-button{
@@ -518,7 +607,7 @@ a{
   }
 
   .content-text{
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: 300;
     color: #000000;
     justify-content: flex-end;
