@@ -14,6 +14,8 @@ var currentScrollY = 0;
 gatherElements()
 
 function compOnClick(element){
+  // var splitElement = element.split("-grad")
+  // element = splitElement[0]
   var clickedElement = document.getElementById(element);
   console.log(clickedElement);
   currentScrollY = window.scrollY;
@@ -37,11 +39,14 @@ function compOnClick(element){
 
   if (activeElement == undefined){
     console.log("new element clicked");
+    document.getElementById(clickedElement.id).removeAttribute("onclick")
     clickedElement.classList.add("division-clicked");
     var clickedContentId = clickedElement.id + "-content"
     var clickedGradient  = document.getElementById(clickedElement.id + "-gradient");
     clickedGradient.classList.add("division-title-gradient-clicked");
-    var divisionTitle = document.getElementById(clickedElement.id + "-title-row")
+    var clickedBackButton = document.getElementById(clickedElement.id + "-back-button");
+    clickedBackButton.classList.remove("back-button-hidden");
+    var divisionTitle = document.getElementById(clickedElement.id + "-title-row");
     divisionTitle.classList.remove("division-title-visible");
     divisionTitle.classList.add("division-title-hidden");
     document.getElementById(clickedContentId).classList.remove("division-content-hidden")
@@ -94,7 +99,7 @@ function collapseDivsion(){
       priorElement.classList.add("col-md-6")
     }
   }
-
+  var activeElementId = activeElement.id.id
   document.getElementById(activeElement.id.id).classList.remove("division-clicked")
   var activeGradient  = document.getElementById(activeElement.id.id + "-gradient");
   activeGradient.classList.remove("division-title-gradient-clicked");
@@ -109,54 +114,35 @@ function collapseDivsion(){
   console.log('collapseDivsion called');
   activeElement.id.classList.remove("division-clicked");
   document.getElementById(activeContentId).classList.add("division-content-hidden")
+  document.getElementById(activeElement.id.id + "-back-button").classList.add("back-button-hidden")
   activeElement = undefined;
+  document.getElementById(activeElementId+"-gradient").setAttribute("onclick", "compOnClick(this.id)")
+
 }
 
 
 window.addEventListener("scroll", function(){
 console.log("scroll event");
-  if(activeElement != undefined){
-
-
-//basically when a link is clicked it causes the page to scroll. The compClick funciton deosn't have time to catch up so the wrong division is collapsed
-
-    if (window.scrollY > currentScrollY + 1300){
-      console.log("down");
-      console.log(window.scrollY);
-      collapseDivsion();
-    }
-
-    if (window.scrollY < currentScrollY - 1400){
-      console.log("up");
-      console.log(window.scrollY);
-      collapseDivsion();
-    }
-
-
-
-    // if((allListedElements.includes(activeElement.id.id)) && (allListedElements.indexOf(activeElement.id.id) == allListedElements.length - 1 || allListedElements.indexOf(activeElement.id.id) == allListedElements.length - 2)){
-    //
-    //   if ((activeElement.bottom) < window.scrollY - 700){
-    //   collapseDivsion(activeElement);
-    //   }
-    //
-    //   if((activeElement.top) > window.scrollY + 250){
-    //   collapseDivsion(activeElement);
-    // }
-    // }
-    // else
-    // {
-    //   if ((activeElement.bottom) < window.scrollY - 300){
-    //   collapseDivsion(activeElement);
-    //   }
-    //
-    //   if((activeElement.top) > window.scrollY - 250){
-    //   collapseDivsion(activeElement);
-    //
-    // }
-    //
-    // }
-}
+//   if(activeElement != undefined){
+//
+//
+// //basically when a link is clicked it causes the page to scroll. The compClick funciton deosn't have time to catch up so the wrong division is collapsed
+//
+//     if (window.scrollY > currentScrollY + 1300){
+//       console.log("down");
+//       console.log(window.scrollY);
+//       collapseDivsion();
+//     }
+//
+//     if (window.scrollY < currentScrollY - 1400){
+//       console.log("up");
+//       console.log(window.scrollY);
+//       collapseDivsion();
+//     }
+//
+//
+//
+// }
 })
 
 
