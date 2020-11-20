@@ -21,7 +21,7 @@
 
 @keyframes gradient-grow-new {
   from{
-    height: 12em;
+    height: 26em;
     background: linear-gradient(0deg, rgba(235,235,235,1) 97%, rgba(255,255,255,0.14189425770308128) 100%);}
     to{
       height: 88em;
@@ -72,13 +72,13 @@ a{
   position: relative;
 }
 
-.col-sm-12{
+/* .col-sm-12{
   transition: 0.05s;
 }
 
 .col-md-6{
   transition: 0.05s;
-}
+} */
 
 
 .major-division{
@@ -118,9 +118,6 @@ a{
   transition: 0.6s;
 }
 
-/* .minor-division-transition{
-  .transition:;
-} */
 
 .back-button{
   position: absolute;
@@ -130,16 +127,16 @@ a{
   font-size: 2.5em;
   z-index: 99;
   color: #ffffff;
+  background: none;
+  border: none;
 }
 
 .back-button-hidden{
-  display: none!important;
-
-}
-
-.fa, .fab, .fad, .fal, .far, .fas{
   display: none;
+
 }
+
+
 
 .division-banner{
   position: absolute;
@@ -170,9 +167,8 @@ a{
   z-index:1;
   left: 0;
   bottom: 0;
-  height: 12em;
-  background: rgb(35,35,35);
-  background: linear-gradient(0deg, rgba(35,35,35,0.77) 20%, rgba(35,35,35,0.011642156862745057) 100%);
+  height: 26em;
+  background: linear-gradient(0deg, rgba(35,35,35,0.5) 7%, rgba(35,35,35,0.25) 20%, rgba(35,35,35,0.011642156862745057) 50%, rgba(35,35,35,0) 100%);
   background-size: cover;
   width: 100%;
 }
@@ -234,7 +230,7 @@ a{
 .division-title-visible{
   display: block;
   position: relative;
-  top: 12em;
+  top: 25em;
   left:0;
   z-index: 2;
 }
@@ -559,12 +555,20 @@ a{
     z-index:1;
     left: 0;
     bottom: 0;
-    height: 9em;
-    background: rgb(35,35,35);
-    background: linear-gradient(0deg, rgba(35,35,35,0.77) 20%, rgba(35,35,35,0.011642156862745057) 100%);
+    height: 22em;
+    background: linear-gradient(0deg, rgba(35,35,35,0.5) 7%, rgba(35,35,35,0.25) 20%, rgba(35,35,35,0.011642156862745057) 50%, rgba(35,35,35,0) 100%);
     background-size: cover;
     width: 100%;
   }
+
+  .division-title-visible{
+    display: block;
+    position: relative;
+    top: 21em;
+    left:0;
+    z-index: 2;
+  }
+
 
   .content-logo{
     width: 9em;
@@ -717,12 +721,20 @@ a{
     z-index:1;
     left: 0;
     bottom: 0;
-    height: 10em;
-    background: rgb(35,35,35);
-    background: linear-gradient(0deg, rgba(35,35,35,0.77) 20%, rgba(35,35,35,0.011642156862745057) 100%);
+    height: 18em;
+    background: linear-gradient(0deg, rgba(35,35,35,0.5) 7%, rgba(35,35,35,0.25) 20%, rgba(35,35,35,0.011642156862745057) 50%, rgba(35,35,35,0) 100%);
     background-size: cover;
     width: 100%;
   }
+
+  .division-title-visible{
+    display: block;
+    position: relative;
+    top: 18em;
+    left:0;
+    z-index: 2;
+  }
+
 
 
 
@@ -895,12 +907,20 @@ a{
     z-index:1;
     left: 0;
     bottom: 0;
-    height: 7em;
-    background: rgb(35,35,35);
-    background: linear-gradient(0deg, rgba(35,35,35,0.77) 20%, rgba(35,35,35,0.011642156862745057) 100%);
+    height: 14em;
+    background: linear-gradient(0deg, rgba(35,35,35,0.5) 7%, rgba(35,35,35,0.25) 20%, rgba(35,35,35,0.011642156862745057) 50%, rgba(35,35,35,0) 100%);
     background-size: cover;
     width: 100%;
   }
+
+  .division-title-visible{
+    display: block;
+    position: relative;
+    top: 13em;
+    left:0;
+    z-index: 2;
+  }
+
 
   .title-container{
   padding: 0 0 0 0.75em;
@@ -1030,7 +1050,7 @@ a{
     from{
       display: flex;
       flex-grow: 1;
-      min-height: 26em;
+      min-height: 10em;
       overflow: hidden;
       background-size: 100%;
       background-position: 0% 0%;
@@ -1049,7 +1069,7 @@ a{
 
   @keyframes gradient-grow-new {
     from{
-      height: 12em;
+      height: 10em;
       background: linear-gradient(0deg, rgba(235,235,235,1) 97%, rgba(255,255,255,0.14189425770308128) 100%);}
       to{
         height: 57em;
@@ -1092,12 +1112,20 @@ a{
     z-index:1;
     left: 0;
     bottom: 0;
-    height: 8em;
-    background: rgb(35,35,35);
-    background: linear-gradient(0deg, rgba(35,35,35,0.77) 20%, rgba(35,35,35,0.011642156862745057) 100%);
+    height: 10em;
+    background: linear-gradient(0deg, rgba(35,35,35,0.5) 7%, rgba(35,35,35,0.25) 20%, rgba(35,35,35,0.011642156862745057) 50%, rgba(35,35,35,0) 100%);
     background-size: cover;
     width: 100%;
   }
+
+  .division-title-visible{
+    display: block;
+    position: relative;
+    top: 10em;
+    left:0;
+    z-index: 2;
+  }
+
 
   .major-division-banner{
     position: absolute;
@@ -1249,7 +1277,7 @@ a{
     from{
       display: flex;
       flex-grow: 1;
-      min-height: 26em;
+      min-height: 10em;
       overflow: hidden;
       background-size: 100%;
       background-position: 0% 0%;
@@ -1268,7 +1296,7 @@ a{
 
   @keyframes gradient-grow-new {
     from{
-      height: 12em;
+      height: 10em;
       background: linear-gradient(0deg, rgba(235,235,235,1) 97%, rgba(255,255,255,0.14189425770308128) 100%);}
       to{
         height: 56em;
@@ -1307,11 +1335,17 @@ a{
     z-index:1;
     left: 0;
     bottom: 0;
-    height: 6em;
-    background: rgb(35,35,35);
-    background: linear-gradient(0deg, rgba(35,35,35,0.77) 20%, rgba(35,35,35,0.011642156862745057) 100%);
+    height: 10em;
+    background: linear-gradient(0deg, rgba(35,35,35,0.5) 7%, rgba(35,35,35,0.25) 20%, rgba(35,35,35,0.011642156862745057) 50%, rgba(35,35,35,0) 100%);
     background-size: cover;
     width: 100%;
+  }
+  .division-title-visible{
+    display: block;
+    position: relative;
+    top: 10em;
+    left:0;
+    z-index: 2;
   }
 
 

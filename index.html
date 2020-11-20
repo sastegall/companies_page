@@ -11,17 +11,27 @@
     <section>
       <div class="container-fluid">
         <div class="row">
+          <div class="col-xl-12" style="min-height:600px;">
+            <div class="division-title-gradient"
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+
+        </div>
+      </div>
+        <div class="row">
 
 
 
-          <div id="jrsmith" class="col-xl-12 major-division" onclick="compOnClick(this.id)">
+          <div id="jrsmith" class="col-xl-12 major-division">
 
 
             <img src="assets/jrsmith-banner.jpg" alt="" class="major-division-banner"/>
-            <i id="jrsmith-back-button" class="fas fa-arrow-left back-button back-button-hidden"></i>
+            <button type="button" id="jrsmith-back-button" class="back-button back-button-hidden" onclick="collapseDivsion()">
+              <i  class="fas fa-arrow-left" ></i>
+            </button>
           </a>
           <a href="#jrsmith">
-            <div id="jrsmith-gradient" class="division-title-gradient">
+            <div id="jrsmith-gradient" class="division-title-gradient" onclick="compOnClick(this.id)">
               <div id="jrsmith-title-row" class="division-title-visible">
               <div class="title-container">
               <img src="assets/jrsmith-logo.jpg" alt="jrsmith-logo" class="horizontal-division-logo">
@@ -93,7 +103,9 @@
               <div id="acorn-engineering" class="col-xl-12 major-division" onclick="compOnClick(this.id)">
 
                 <img src="assets/acorn-engineering-banner.jpg" alt="" class="major-division-banner"/>
-                <i id="acorn-engineering-back-button" class="back-button back-button-hidden fas fa-arrow-left"></i>
+                <button type="button" id="acorn-engineering-back-button" class="back-button back-button-hidden" onclick="collapseDivsion()">
+                  <i  class="fas fa-arrow-left" ></i>
+                </button>
 
                 <a href="#acorn-engineering">
                 <div id="acorn-engineering-gradient" class="division-title-gradient">
@@ -166,13 +178,15 @@
 
                   </div>
 
-          <div id="acorn-beekeeping" class="col-sm-12 col-md-6 minor-division minor-division-transition" onclick="compOnClick(this.id)">
+          <div id="acorn-beekeeping" class="col-sm-12 col-md-6 minor-division minor-division-transition">
 
             <img src="assets/acorn-beekeeping-banner.jpg" alt="" class="minor-division-banner"/>
-            <i id="acorn-Beekeeping-back-button" class="back-button back-button-hidden fas fa-arrow-left"></i>
+            <button type="button" id="acorn-beekeeping-back-button" class="back-button back-button-hidden" onclick="collapseDivsion()">
+              <i  class="fas fa-arrow-left" ></i>
+            </button>
 
           <a href="#acorn-beekeeping">
-          	<div id="acorn-beekeeping-gradient" class="division-title-gradient">
+          	<div id="acorn-beekeeping-gradient" class="division-title-gradient" onclick="compOnClick(this.id)">
           		<div id="acorn-beekeeping-title-row" class="division-title-visible">
                 <div class="title-container">
                 <img src="assets/acorn-beekeeping-logo.png" alt="acorn-beekeeping-logo" class="division-logo">
@@ -235,13 +249,15 @@
           </div>
         </div>
 
-    <div id="acorn-engineered-systems" class="col-sm-12 col-md-6 minor-division minor-division-transition" onclick="compOnClick(this.id)">
+    <div id="acorn-engineered-systems" class="col-sm-12 col-md-6 minor-division minor-division-transition">
 
   	<img src="assets/acorn-engineered-systems-banner.jpg" alt="" class="minor-division-banner"/>
-    <i id="acorn-engineered-systems-back-button" class="back-button-hidden back-button fas fa-arrow-left"></i>
+    <button type="button" id="acorn-engineered-systems-back-button" class="back-button back-button-hidden" onclick="collapseDivsion()">
+      <i  class="fas fa-arrow-left" ></i>
+    </button>
 
     <a href="#acorn-engineered-systems">
-  	<div id="acorn-engineered-systems-gradient" class="division-title-gradient">
+  	<div id="acorn-engineered-systems-gradient" class="division-title-gradient" onclick="compOnClick(this.id)">
   		<div id="acorn-engineered-systems-title-row" class="division-title-visible">
         <div class="title-container">
   			<img src="assets/acorn-engineered-systems-logo.png" alt="acorn-engineered-systems-logo" class="division-logo">
@@ -307,12 +323,14 @@
     </div>
   	</div>
 
-    <div id="acorn-gencon" class="col-sm-12 col-md-6 minor-division minor-division-transition" onclick="compOnClick(this.id)">
+    <div id="acorn-gencon" class="col-sm-12 col-md-6 minor-division minor-division-transition">
 
     	<img src="assets/acorn-gencon-banner.jpg" alt="" class="minor-division-banner"/>
-      <i id="acorn-gencon-back-button" class="back-button-hidden back-button fas fa-arrow-left"></i>
+      <button type="button" id="acorn-gencon-back-button" class="back-button back-button-hidden" onclick="collapseDivsion()">
+        <i  class="fas fa-arrow-left" ></i>
+      </button>
       <a href="#acorn-gencon">
-    	<div id="acorn-gencon-gradient" class="division-title-gradient">
+    	<div id="acorn-gencon-gradient" class="division-title-gradient" onclick="compOnClick(this.id)">
     		<div id="acorn-gencon-title-row" class="division-title-visible">
           <div class="title-container">
     			<img src="assets/acorn-gencon-logo.png" alt="acorn-gencon-logo" class="division-logo">
@@ -381,8 +399,10 @@
     <div id="acorn-safety" class="col-sm-12 col-md-6 minor-division minor-division-transition" onclick="compOnClick(this.id)">
 
   	<img src="assets/acorn-safety-banner.jpg" alt="" class="minor-division-banner"/>
-    <i id="acorn-safety-back-button" class="back-button back-button-hidden fas fa-arrow-left"></i>
-    <a href="#acorn-safety">
+    <button type="button" id="acorn-safety-back-button" class="back-button back-button-hidden" onclick="collapseDivsion()">
+      <i  class="fas fa-arrow-left" ></i>
+    </button>
+        <a href="#acorn-safety">
   	<div id="acorn-safety-gradient" class="division-title-gradient">
   		<div id="acorn-safety-title-row" class="division-title-visible">
         <div class="title-container">
@@ -451,9 +471,11 @@
 
   <div id="acorn-thorn" class="col-sm-12 col-md-6 minor-division minor-division-transition" onclick="compOnClick(this.id)">
     <img src="assets/acorn-thorn-banner.jpg" alt="" class="minor-division-banner"/>
-    <i id="acorn-thorn-back-button" class="back-button back-button-hidden fas fa-arrow-left"></i>
-    <a href="#acorn-thorn">
-  	<div id="acorn-thorn-gradient" class="division-title-gradient">
+    <button type="button" id="acorn-thorn-back-button" class="back-button back-button-hidden" onclick="collapseDivsion()">
+      <i  class="fas fa-arrow-left" ></i>
+    </button>
+        <a href="#acorn-thorn">
+  	<div id="acorn-thorn-gradient" class="division-title-gradient" onclick="compOnClick(this.id)">
   		<div id="acorn-thorn-title-row" class="division-title-visible">
         <div class="title-container">
   			<img src="assets/acorn-thorn-logo.png" alt="acorn-thorn-logo" class="division-logo">
@@ -525,11 +547,13 @@
 
 
 
-  <div id="acorn-vac" class="col-sm-12 col-md-6 minor-division minor-division-transition" onclick="compOnClick(this.id)">
+  <div id="acorn-vac" class="col-sm-12 col-md-6 minor-division minor-division-transition">
     <img src="assets/acorn-vac-banner.jpg" alt="" class="minor-division-banner"/>
-    <i id="acorn-vac-back-button" class="back-button back-button-hidden fas fa-arrow-left"></i>
+    <button type="button" id="acorn-vac-back-button" class="back-button back-button-hidden" onclick="collapseDivsion()">
+      <i  class="fas fa-arrow-left" ></i>
+    </button>
     <a href="#acorn-vac">
-    <div id="acorn-vac-gradient" class="division-title-gradient">
+    <div id="acorn-vac-gradient" class="division-title-gradient" onclick="compOnClick(this.id)">
     <div id="acorn-vac-title-row" class="division-title-visible">
       <div class="title-container">
     <img src="assets/acorn-vac-logo.png" alt="acorn-vac-logo" class="division-logo">
@@ -597,11 +621,13 @@
     </div>
     </div>
 
-  <div id="chronomite" class="col-sm-12 col-md-6 minor-division minor-division-transition" onclick="compOnClick(this.id)">
+  <div id="chronomite" class="col-sm-12 col-md-6 minor-division minor-division-transition">
 	<img src="assets/chronomite-banner.jpg" alt="" class="minor-division-banner"/>
-  <i id="chronomite-back-button" class="back-button back-button-hidden fas fa-arrow-left"></i>
+  <button type="button" id="chronomite-back-button" class="back-button back-button-hidden" onclick="collapseDivsion()">
+    <i  class="fas fa-arrow-left" ></i>
+  </button>
   <a href="#chronomite">
-  	<div id="chronomite-gradient" class="division-title-gradient">
+  	<div id="chronomite-gradient" class="division-title-gradient" onclick="compOnClick(this.id)">
 		<div id="chronomite-title-row" class="division-title-visible">
       <div class="title-container">
 			<img src="assets/chronomite-logo.png" alt="chronomite-logo" class="detailed-division-logo">
@@ -672,11 +698,13 @@
 
 
 
-<div id="elmco" class="col-sm-12 col-md-6 minor-division minor-division-transition" onclick="compOnClick(this.id)">
+<div id="elmco" class="col-sm-12 col-md-6 minor-division minor-division-transition">
 	<img src="assets/elmco-banner.jpg" alt="" class="minor-division-banner"/>
-  <i id="elmco-back-button" class="back-button back-button-hidden fas fa-arrow-left"></i>
+  <button type="button" id="elmco-back-button" class="back-button back-button-hidden" onclick="collapseDivsion()">
+    <i  class="fas fa-arrow-left" ></i>
+  </button>
   <a href="#elmco">
-	<div id="elmco-gradient" class="division-title-gradient">
+	<div id="elmco-gradient" class="division-title-gradient" onclick="compOnClick(this.id)">
 		<div id="elmco-title-row" class="division-title-visible">
       <div class="title-container">
 			<img src="assets/elmco-logo.png" alt="elmco-logo" class="division-logo">
@@ -748,11 +776,13 @@
 
 
 
-<div id="elmdor" class="col-sm-12 col-md-6 minor-division minor-division-transition" onclick="compOnClick(this.id)">
+<div id="elmdor" class="col-sm-12 col-md-6 minor-division minor-division-transition">
 	<img src="assets/elmdor-banner.jpg" alt="" class="minor-division-banner"/>
-  <i id="elmdor-back-button" class="back-button back-button-hidden fas fa-arrow-left"></i>
+  <button type="button" id="elmdor-back-button" class="back-button back-button-hidden" onclick="collapseDivsion()">
+    <i  class="fas fa-arrow-left" ></i>
+  </button>
   <a href="#elmdor">
-	<div id="elmdor-gradient" class="division-title-gradient">
+	<div id="elmdor-gradient" class="division-title-gradient" onclick="compOnClick(this.id)">
 		<div id="elmdor-title-row" class="division-title-visible">
       <div class="title-container">
 			<img src="assets/elmdor-logo.png" alt="elmdor-logo" class="division-logo">
@@ -823,11 +853,13 @@
 
 
 
-<div id="engineered-solutions" class="col-sm-12 col-md-6 minor-division minor-division-transition" onclick="compOnClick(this.id)">
+<div id="engineered-solutions" class="col-sm-12 col-md-6 minor-division minor-division-transition">
   <img src="assets/engineered-solutions-banner.jpg" alt="" class="division-banner"/>
-  <i id="engineered-solutions-back-button" class="back-button back-button-hidden fas fa-arrow-left"></i>
+  <button type="button" id="engineered-solutions-back-button" class="back-button back-button-hidden" onclick="collapseDivsion()">
+    <i  class="fas fa-arrow-left" ></i>
+  </button>
   <a href="#engineered-solutions">
-	<div id="engineered-solutions-gradient" class="division-title-gradient">
+	<div id="engineered-solutions-gradient" class="division-title-gradient" onclick="compOnClick(this.id)">
 		<div id="engineered-solutions-title-row" class="division-title-visible">
       <div class="title-container">
 			<img src="assets/engineered-solutions-logo.png" alt="engineered-solutions-logo" class="detailed-division-logo">
@@ -895,11 +927,13 @@
 	</div>
 
 
-<div id="larsen" class="col-sm-12 col-md-6 minor-division minor-division-transition" onclick="compOnClick(this.id)">
+<div id="larsen" class="col-sm-12 col-md-6 minor-division minor-division-transition">
   <img src="assets/larsen-banner.jpg" alt="" class="minor-division-banner"/>
-  <i id="larsen-back-button" class="back-button back-button-hidden fas fa-arrow-left"></i>
+  <button type="button" id="larsen-back-button" class="back-button back-button-hidden" onclick="collapseDivsion()">
+    <i  class="fas fa-arrow-left" ></i>
+  </button>
   <a href="#larsen">
-	<div id="larsen-gradient" class="division-title-gradient">
+	<div id="larsen-gradient" class="division-title-gradient" onclick="compOnClick(this.id)">
 		<div id="larsen-title-row" class="division-title-visible">
       <div class="title-container">
 			<img src="assets/larsen-logo.png" alt="larsen-logo" class="division-logo">
@@ -977,11 +1011,13 @@
 </div>
 
 
-<div id="morris-mexico" class="col-sm-12 col-md-6 minor-division minor-division-transition" onclick="compOnClick(this.id)">
+<div id="morris-mexico" class="col-sm-12 col-md-6 minor-division minor-division-transition">
   <img src="assets/morris-mexico-banner.jpg" alt="" class="minor-division-banner"/>
-  <i id="morris-mexico-back-button" class="back-button back-button-hidden fas fa-arrow-left"></i>
+  <button type="button" id="morris-mexico-back-button" class="back-button back-button-hidden" onclick="collapseDivsion()">
+    <i  class="fas fa-arrow-left" ></i>
+  </button>
   <a href="#morris-mexico">
-	<div id="morris-mexico-gradient" class="division-title-gradient">
+	<div id="morris-mexico-gradient" class="division-title-gradient" onclick="compOnClick(this.id)">
 		<div id="morris-mexico-title-row" class="division-title-visible">
       <div class="title-container">
 			<img src="assets/morris-mexico-logo.png" alt="morris-mexico-logo" class="detailed-division-logo">
@@ -1049,11 +1085,13 @@
 	</div>
 	</div>
 
-<div id="morris-me" class="col-sm-12 col-md-6 minor-division minor-division-transition" onclick="compOnClick(this.id)">
+<div id="morris-me" class="col-sm-12 col-md-6 minor-division minor-division-transition">
 	<img src="assets/morris-me-banner.jpg" alt="" class="minor-division-banner"/>
-  <i id="morris-me-back-button" class="back-button back-button-hidden  fas fa-arrow-left"></i>
+  <button type="button" id="morris-me-back-button" class="back-button back-button-hidden" onclick="collapseDivsion()">
+    <i  class="fas fa-arrow-left" ></i>
+  </button>
   <a href="#morris-me">
-	<div id="morris-me-gradient" class="division-title-gradient">
+	<div id="morris-me-gradient" class="division-title-gradient" onclick="compOnClick(this.id)">
 		<div id="morris-me-title-row" class="division-title-visible">
       <div class="title-container">
 			<img src="assets/morris-me-logo.png" alt="morris-me-logo" class="division-logo">
@@ -1121,11 +1159,13 @@
 	</div>
 </div>
 
-<div id="murdock" class="col-sm-12 col-md-6 minor-division minor-division-transition" onclick="compOnClick(this.id)">
+<div id="murdock" class="col-sm-12 col-md-6 minor-division minor-division-transition">
 	<img src="assets/murdock-banner.jpg" alt="" class="minor-division-banner"/>
-  <i id="murdock-back-button" class="back-button back-button-hidden fas fa-arrow-left"></i>
+  <button type="button" id="murdock-back-button" class="back-button back-button-hidden" onclick="collapseDivsion()">
+    <i  class="fas fa-arrow-left" ></i>
+  </button>
   <a href="#murdock">
-	<div id="murdock-gradient" class="division-title-gradient">
+	<div id="murdock-gradient" class="division-title-gradient" onclick="compOnClick(this.id)">
 		<div id="murdock-title-row" class="division-title-visible">
       <div class="title-container">
 			<img src="assets/murdock-logo.png" alt="murdock-logo" class="division-logo">
@@ -1195,11 +1235,13 @@
 	</div>
 </div>
 
-<div id="neo-metro" class="col-sm-12 col-md-6 minor-division minor-division-transition" onclick="compOnClick(this.id)">
+<div id="neo-metro" class="col-sm-12 col-md-6 minor-division minor-division-transition">
   <img src="assets/neo-metro-banner.jpg" alt="" class="minor-division-banner"/>
-  <i id="neo-metro-back-button" class="back-button back-button-hidden fas fa-arrow-left"></i>
-  <a href="#neo-metro">
-	<div id="neo-metro-gradient" class="division-title-gradient">
+  <button type="button" id="neo-metro-back-button" class="back-button back-button-hidden" onclick="collapseDivsion()">
+    <i  class="fas fa-arrow-left" ></i>
+  </button>
+    <a href="#neo-metro">
+	<div id="neo-metro-gradient" class="division-title-gradient" onclick="compOnClick(this.id)">
 		<div id="neo-metro-title-row" class="division-title-visible">
       <div class="title-container">
 			<img src="assets/neo-metro-logo.png" alt="neo-metro-logo" class="horizontal-division-logo">
@@ -1268,11 +1310,13 @@
 	</div>
 
 
-<div id="potter-roemer" class="col-sm-12 col-md-6 minor-division minor-division-transition" onclick="compOnClick(this.id)">
+<div id="potter-roemer" class="col-sm-12 col-md-6 minor-division minor-division-transition">
       	<img src="assets/potter-roemer-banner.jpg" alt="" class="minor-division-banner"/>
-        <i id="potter-roemer-back-button" class="back-button back-button-hidden fas fa-arrow-left"></i>
+        <button type="button" id="potter-roemer-back-button" class="back-button back-button-hidden" onclick="collapseDivsion()">
+          <i  class="fas fa-arrow-left" ></i>
+        </button>
         <a href="#potter-roemer">
-      	<div id="potter-roemer-gradient" class="division-title-gradient">
+      	<div id="potter-roemer-gradient" class="division-title-gradient" onclick="compOnClick(this.id)">
       		<div id="potter-roemer-title-row" class="division-title-visible">
             <div class="title-container">
       			<img src="assets/potter-roemer-logo.png" alt="potter-roemer-logo" class="detailed-division-logo">
@@ -1342,11 +1386,13 @@
       </div>
 
 
-<div id="firepro" class="col-sm-12 col-md-6 minor-division minor-division-transition" onclick="compOnClick(this.id)">
+<div id="firepro" class="col-sm-12 col-md-6 minor-division minor-division-transition">
       	<img src="assets/firepro-banner.jpg" alt="" class="minor-division-banner"/>
-        <i id="firepro-back-button" class="back-button back-button-hidden fas fa-arrow-left"></i>
+        <button type="button" id="firepro-back-button" class="back-button back-button-hidden" onclick="collapseDivsion()">
+          <i  class="fas fa-arrow-left" ></i>
+        </button>
         <a href="#firepro">
-      	<div id="firepro-gradient" class="division-title-gradient">
+      	<div id="firepro-gradient" class="division-title-gradient" onclick="compOnClick(this.id)">
       		<div id="firepro-title-row" class="division-title-visible">
             <div class="title-container">
       			<img src="assets/firepro-logo.png" alt="firepro-logo" class="detailed-division-logo">
@@ -1415,11 +1461,13 @@
 
 
 
-<div id="smith-chrome" class="col-sm-12 col-md-6 minor-division minor-division-transition" onclick="compOnClick(this.id)">
+<div id="smith-chrome" class="col-sm-12 col-md-6 minor-division minor-division-transition">
     	<img src="assets/smith-chrome-banner.jpg" alt="" class="minor-division-banner"/>
-      <i id="smith-chrome-back-button" class="back-button back-button-hidden fas fa-arrow-left"></i>
+      <button type="button" id="smith-chrome-back-button" class="back-button back-button-hidden" onclick="collapseDivsion()">
+        <i  class="fas fa-arrow-left" ></i>
+      </button>
       <a href="#smith-chrome">
-    	<div id="smith-chrome-gradient" class="division-title-gradient">
+    	<div id="smith-chrome-gradient" class="division-title-gradient" onclick="compOnClick(this.id)">
     		<div id="smith-chrome-title-row" class="division-title-visible">
           <div class="title-container">
     			<img src="assets/smith-chrome-logo.png" alt="smith-chrome-logo" class="detailed-division-logo">
@@ -1488,11 +1536,13 @@
 
 
 
-<div id="whitehall-mfg" class="col-sm-12 col-md-6 minor-division minor-division-transition" onclick="compOnClick(this.id)">
+<div id="whitehall-mfg" class="col-sm-12 col-md-6 minor-division minor-division-transition">
 	<img src="assets/whitehall-mfg-banner.jpg" alt="" class="minor-division-banner"/>
-  <i id="whitehall-mfg-back-button" class="back-button back-button-hidden fas fa-arrow-left"></i>
+  <button type="button" id="whitehall-mfg-back-button" class="back-button back-button-hidden" onclick="collapseDivsion()">
+    <i  class="fas fa-arrow-left" ></i>
+  </button>
   <a href="#whitehall-mfg">
-	<div id="whitehall-mfg-gradient" class="division-title-gradient">
+	<div id="whitehall-mfg-gradient" class="division-title-gradient" onclick="compOnClick(this.id)">
 		<div id="whitehall-mfg-title-row" class="division-title-visible">
       <div class="title-container">
 			<img src="assets/whitehall-mfg-logo.png" alt="whitehall-mfg-logo" class="horizontal-division-logo">
@@ -1565,7 +1615,9 @@
 
 <div id="whitehall-rehab" class="col-sm-12 col-md-6 minor-division minor-division-transition">
 	<img src="assets/whitehall-rehab-banner.jpg" alt="" class="minor-division-banner"/>
-  <i id="whitehall-rehab-back-button" class="back-button back-button-hidden fas fa-arrow-left" onclick="collapseDivsion()"></i>
+  <button type="button" id="whitehall-rehab-back-button" class="back-button back-button-hidden" onclick="collapseDivsion()">
+    <i  class="fas fa-arrow-left" ></i>
+  </button>
   <a href="#whitehall-rehab">
 	<div id="whitehall-rehab-gradient" class="division-title-gradient" onclick="compOnClick(this.id)">
 		<div id="whitehall-rehab-title-row" class="division-title-visible">
@@ -1631,6 +1683,11 @@
     </div>
 	</div>
 	</div>
+
+
+
+
+
 	</div>
 
 </div>

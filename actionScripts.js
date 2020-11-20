@@ -14,8 +14,8 @@ var currentScrollY = 0;
 gatherElements()
 
 function compOnClick(element){
-  // var splitElement = element.split("-grad")
-  // element = splitElement[0]
+  var splitElement = element.split("-grad")
+  element = splitElement[0]
   var clickedElement = document.getElementById(element);
   console.log(clickedElement);
   currentScrollY = window.scrollY;
@@ -45,6 +45,7 @@ function compOnClick(element){
     var clickedGradient  = document.getElementById(clickedElement.id + "-gradient");
     clickedGradient.classList.add("division-title-gradient-clicked");
     var clickedBackButton = document.getElementById(clickedElement.id + "-back-button");
+    console.log(clickedBackButton);
     clickedBackButton.classList.remove("back-button-hidden");
     var divisionTitle = document.getElementById(clickedElement.id + "-title-row");
     divisionTitle.classList.remove("division-title-visible");
