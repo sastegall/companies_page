@@ -131,6 +131,19 @@ a{
   border: none;
 }
 
+.alt-back-button{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1em 0 0 1.5em;
+  font-size: 2.5em;
+  z-index: 99;
+  color: #a1a1a1;
+  background: none;
+  border: none;
+}
+
+
 .back-button-hidden{
   display: none;
 
@@ -736,7 +749,46 @@ a{
   }
 
 
+  .back-button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0.75em 0 0 1em;
+    font-size: 1.75em;
+    z-index: 99;
+    color: #ffffff;
+    background: none;
+    border: none;
+  }
 
+  .alt-back-button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    .back-button{
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 2em 0 0 1.5em;
+      font-size: 2.5em;
+      z-index: 99;
+      color: #ffffff;
+      background: none;
+      border: none;
+}
+    .alt-back-button{
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 2em 0 0 1.5em;
+      font-size: 2.5em;
+      z-index: 99;
+      color: #a1a1a1;
+      z-index: 99;
+      color: #a1a1a1;
+      background: none;
+      border: none;
+  }
 
   .division-logo{
     width: 8.5em;
